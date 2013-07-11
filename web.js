@@ -6,7 +6,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  var indexFile = fs.readFileSync("./index.html");
+  var indexFile = fs.readFileSync("index.html");
   response.send(indexFile.toString);
 });
 
